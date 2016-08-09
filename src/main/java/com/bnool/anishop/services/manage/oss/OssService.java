@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.manage.oss;import com.bnool.anishop.core.Services;import com.bnool.anishop.services.manage.oss.bean.Oss;public interface OssService extends Services<Oss> {}

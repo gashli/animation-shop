@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.front.notifyTemplate;import com.bnool.anishop.core.Services;import com.bnool.anishop.services.front.notifyTemplate.bean.NotifyTemplate;public interface NotifyTemplateService extends Services<NotifyTemplate> {}

@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.manage.navigation;import com.bnool.anishop.core.Services;import com.bnool.anishop.services.manage.navigation.bean.Navigation;public interface NavigationService extends Services<Navigation> {}

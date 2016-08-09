@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.manage.activity;import com.bnool.anishop.core.Services;import com.bnool.anishop.services.manage.activity.bean.Activity;public interface ActivityService extends Services<Activity> {}

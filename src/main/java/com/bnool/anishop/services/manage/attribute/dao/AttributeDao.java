@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.manage.attribute.dao;import com.bnool.anishop.core.DaoManager;import com.bnool.anishop.services.manage.attribute.bean.Attribute;public interface AttributeDao extends DaoManager<Attribute> {	/**	 * @param e	 */	void deleteByPid(int pid);	/**	 * @param id	 */	void deleteAllById(int id);	int selectCount(Attribute ee);}

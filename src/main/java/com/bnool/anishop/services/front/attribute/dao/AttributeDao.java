@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.front.attribute.dao;import com.bnool.anishop.core.DaoManager;import com.bnool.anishop.services.front.attribute.bean.Attribute;public interface AttributeDao extends DaoManager<Attribute> {	/**	 * @param e	 */	void deleteByPid(Attribute e);}

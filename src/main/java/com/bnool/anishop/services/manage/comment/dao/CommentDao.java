@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.manage.comment.dao;import com.bnool.anishop.core.DaoManager;import com.bnool.anishop.services.manage.comment.bean.Comment;public interface CommentDao extends DaoManager<Comment> {	int selectNotReplyCount();	void updateStatus(Comment c);}

@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.manage.hotquery;import com.bnool.anishop.core.Services;import com.bnool.anishop.services.manage.hotquery.bean.Hotquery;public interface HotqueryService extends Services<Hotquery> {}

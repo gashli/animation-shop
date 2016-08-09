@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.front.advert.dao;import com.bnool.anishop.core.DaoManager;import com.bnool.anishop.services.front.advert.bean.Advert;public interface AdvertDao extends DaoManager<Advert> {}

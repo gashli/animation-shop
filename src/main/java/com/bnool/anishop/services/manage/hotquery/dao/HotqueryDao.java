@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.manage.hotquery.dao;import com.bnool.anishop.core.DaoManager;import com.bnool.anishop.services.manage.hotquery.bean.Hotquery;public interface HotqueryDao extends DaoManager<Hotquery> {}

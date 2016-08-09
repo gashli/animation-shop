@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.front.systemlog;import com.bnool.anishop.core.Services;import com.bnool.anishop.services.front.systemlog.bean.Systemlog;public interface SystemlogService extends Services<Systemlog> {}

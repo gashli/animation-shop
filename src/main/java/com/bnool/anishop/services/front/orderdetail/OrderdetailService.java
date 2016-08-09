@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.front.orderdetail;import com.bnool.anishop.core.Services;import com.bnool.anishop.services.front.orderdetail.bean.Orderdetail;public interface OrderdetailService extends Services<Orderdetail> {}

@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.manage.sms.dao;import com.bnool.anishop.core.DaoManager;import com.bnool.anishop.services.manage.sms.bean.Sms;public interface SmsDao extends DaoManager<Sms> {}

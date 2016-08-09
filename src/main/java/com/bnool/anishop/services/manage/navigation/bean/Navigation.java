@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.manage.navigation.bean;import java.io.Serializable;public class Navigation extends com.bnool.anishop.services.common.Navigation implements Serializable {	private static final long serialVersionUID = 1L;	public void clear() {		super.clear();	}}

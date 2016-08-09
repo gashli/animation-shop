@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.front.notifyTemplate.dao;import com.bnool.anishop.core.DaoManager;import com.bnool.anishop.services.front.notifyTemplate.bean.NotifyTemplate;public interface NotifyTemplateDao extends DaoManager<NotifyTemplate> {}

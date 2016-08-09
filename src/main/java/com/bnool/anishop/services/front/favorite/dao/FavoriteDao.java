@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.front.favorite.dao;import com.bnool.anishop.core.DaoManager;import com.bnool.anishop.services.front.favorite.bean.Favorite;public interface FavoriteDao extends DaoManager<Favorite> {	int selectCount(Favorite favorite);}

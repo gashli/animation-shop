@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.manage.task;import com.bnool.anishop.core.Services;import com.bnool.anishop.services.manage.task.bean.Task;public interface TaskService extends Services<Task> {}

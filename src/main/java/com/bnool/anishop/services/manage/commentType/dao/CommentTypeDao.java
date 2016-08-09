@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.manage.commentType.dao;import com.bnool.anishop.core.DaoManager;import com.bnool.anishop.services.manage.commentType.bean.CommentType;public interface CommentTypeDao extends DaoManager<CommentType> {	/**	 * 更新所有的评论插件为未选中	 */	void updateAllN();}

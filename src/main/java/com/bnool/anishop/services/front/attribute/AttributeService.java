@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.front.attribute;import com.bnool.anishop.core.Services;import com.bnool.anishop.services.front.attribute.bean.Attribute;public interface AttributeService extends Services<Attribute> {}

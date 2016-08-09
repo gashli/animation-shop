@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.manage.account.dao;import com.bnool.anishop.core.DaoManager;import com.bnool.anishop.services.manage.account.bean.Account;public interface AccountDao extends DaoManager<Account> {}

@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.manage.spec.dao;import com.bnool.anishop.core.DaoManager;import com.bnool.anishop.services.manage.spec.bean.Spec;public interface SpecDao extends DaoManager<Spec> {}

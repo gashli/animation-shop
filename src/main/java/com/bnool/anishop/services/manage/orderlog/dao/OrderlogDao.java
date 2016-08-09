@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.manage.orderlog.dao;import com.bnool.anishop.core.DaoManager;import com.bnool.anishop.services.manage.orderlog.bean.Orderlog;public interface OrderlogDao extends DaoManager<Orderlog> {}

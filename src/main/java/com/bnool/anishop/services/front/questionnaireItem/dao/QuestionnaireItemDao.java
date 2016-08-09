@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.front.questionnaireItem.dao;import com.bnool.anishop.core.DaoManager;import com.bnool.anishop.services.front.questionnaireItem.bean.QuestionnaireItem;public interface QuestionnaireItemDao extends DaoManager<QuestionnaireItem> {	int uniqeItem(QuestionnaireItem questionnaireItem);}

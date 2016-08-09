@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.front.questionnaire.dao;import com.bnool.anishop.core.DaoManager;import com.bnool.anishop.services.front.questionnaire.bean.Questionnaire;public interface QuestionnaireDao extends DaoManager<Questionnaire> {}

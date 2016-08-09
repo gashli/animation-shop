@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.manage.questionnaireResult;import com.bnool.anishop.core.Services;import com.bnool.anishop.services.manage.questionnaireResult.bean.QuestionnaireResult;public interface QuestionnaireResultService extends		Services<QuestionnaireResult> {}

@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.front.orderpay;import com.bnool.anishop.core.Services;import com.bnool.anishop.services.front.orderpay.bean.Orderpay;public interface OrderpayService extends Services<Orderpay> {}

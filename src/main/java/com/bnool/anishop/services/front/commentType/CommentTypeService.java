@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.front.commentType;import com.bnool.anishop.core.Services;import com.bnool.anishop.services.front.commentType.bean.CommentType;public interface CommentTypeService extends Services<CommentType> {}

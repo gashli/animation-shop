@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.manage.gift.dao;import com.bnool.anishop.core.DaoManager;import com.bnool.anishop.services.manage.gift.bean.Gift;public interface GiftDao extends DaoManager<Gift> {}

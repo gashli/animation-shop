@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.manage.commentType.bean;import java.io.Serializable;public class CommentType extends com.bnool.anishop.services.common.CommentType implements Serializable {	private static final long serialVersionUID = 1L;		public void clear() {		super.clear();	}}

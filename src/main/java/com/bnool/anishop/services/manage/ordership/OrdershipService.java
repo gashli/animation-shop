@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.manage.ordership;import com.bnool.anishop.core.Services;import com.bnool.anishop.services.manage.ordership.bean.Ordership;public interface OrdershipService extends Services<Ordership> {}

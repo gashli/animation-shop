@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.front.systemSetting;import com.bnool.anishop.core.Services;import com.bnool.anishop.services.front.systemSetting.bean.SystemSetting;public interface SystemSettingService extends Services<SystemSetting> {}

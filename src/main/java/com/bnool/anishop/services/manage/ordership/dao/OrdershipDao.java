@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.manage.ordership.dao;import com.bnool.anishop.core.DaoManager;import com.bnool.anishop.services.manage.ordership.bean.Ordership;public interface OrdershipDao extends DaoManager<Ordership> {}

@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.manage.oss.dao;import com.bnool.anishop.core.DaoManager;import com.bnool.anishop.services.manage.oss.bean.Oss;public interface OssDao extends DaoManager<Oss> {}

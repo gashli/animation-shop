@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.manage.emailNotifyProduct;import com.bnool.anishop.core.Services;import com.bnool.anishop.services.manage.emailNotifyProduct.bean.EmailNotifyProduct;public interface EmailNotifyProductService extends Services<EmailNotifyProduct> {	/**	 * 系统自动发送到货通知	 */	void autoNotify();}

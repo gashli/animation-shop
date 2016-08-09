@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.manage.accountRank;import com.bnool.anishop.core.Services;import com.bnool.anishop.services.manage.accountRank.bean.AccountRank;public interface AccountRankService extends Services<AccountRank> {}

@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.manage.activity.dao;import com.bnool.anishop.core.DaoManager;import com.bnool.anishop.services.manage.activity.bean.Activity;public interface ActivityDao extends DaoManager<Activity> {}

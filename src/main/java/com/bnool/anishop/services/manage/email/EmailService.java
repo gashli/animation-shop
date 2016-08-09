@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.manage.email;import com.bnool.anishop.core.Services;import com.bnool.anishop.services.manage.email.bean.Email;public interface EmailService extends Services<Email> {}

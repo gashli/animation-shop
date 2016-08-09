@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.manage.emailNotifyProduct.dao;import com.bnool.anishop.core.DaoManager;import com.bnool.anishop.services.manage.emailNotifyProduct.bean.EmailNotifyProduct;public interface EmailNotifyProductDao extends DaoManager<EmailNotifyProduct> {}

@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.front.keyvalue;import com.bnool.anishop.core.Services;import com.bnool.anishop.services.front.keyvalue.bean.Keyvalue;public interface KeyvalueService extends Services<Keyvalue> {}

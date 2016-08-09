@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.front.orderlog;import com.bnool.anishop.core.Services;import com.bnool.anishop.services.front.orderlog.bean.Orderlog;public interface OrderlogService extends Services<Orderlog> {}

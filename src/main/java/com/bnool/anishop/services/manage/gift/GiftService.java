@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.manage.gift;import com.bnool.anishop.core.Services;import com.bnool.anishop.services.manage.gift.bean.Gift;public interface GiftService extends Services<Gift> {}

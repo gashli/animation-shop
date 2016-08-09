@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.front.address;import com.bnool.anishop.core.Services;import com.bnool.anishop.services.front.address.bean.Address;public interface AddressService extends Services<Address> {	/**	 * 设置指定的地址为默认地址	 * @param address	 */	void setAddressDefault(Address address);}

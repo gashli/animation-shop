@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.front.orderpay.dao;import com.bnool.anishop.core.DaoManager;import com.bnool.anishop.services.front.orderpay.bean.Orderpay;public interface OrderpayDao extends DaoManager<Orderpay> {}

@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.manage.accountRank.dao;import com.bnool.anishop.core.DaoManager;import com.bnool.anishop.services.manage.accountRank.bean.AccountRank;public interface AccountRankDao extends DaoManager<AccountRank> {}

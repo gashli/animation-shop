@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.front.advert;import com.bnool.anishop.core.Services;import com.bnool.anishop.services.front.advert.bean.Advert;public interface AdvertService extends Services<Advert> {}

@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.front.orderdetail.dao;import com.bnool.anishop.core.DaoManager;import com.bnool.anishop.services.front.orderdetail.bean.Orderdetail;public interface OrderdetailDao extends DaoManager<Orderdetail> {	int selectCount(String orderID);}

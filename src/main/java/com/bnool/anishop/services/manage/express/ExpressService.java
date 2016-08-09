@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.manage.express;import com.bnool.anishop.core.Services;import com.bnool.anishop.services.manage.express.bean.Express;public interface ExpressService extends Services<Express> {}

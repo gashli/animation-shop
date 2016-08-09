@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.manage.systemSetting.dao;import com.bnool.anishop.core.DaoManager;import com.bnool.anishop.services.manage.systemSetting.bean.SystemSetting;public interface SystemSettingDao extends DaoManager<SystemSetting> {}

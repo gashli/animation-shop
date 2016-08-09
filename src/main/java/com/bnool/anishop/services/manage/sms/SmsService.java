@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.manage.sms;import com.bnool.anishop.core.Services;import com.bnool.anishop.services.manage.sms.bean.Sms;public interface SmsService extends Services<Sms> {}

@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.manage.task.dao;import com.bnool.anishop.core.DaoManager;import com.bnool.anishop.services.manage.task.bean.Task;public interface TaskDao extends DaoManager<Task> {}

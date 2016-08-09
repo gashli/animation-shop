@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.manage.catalog.dao;import com.bnool.anishop.core.DaoManager;import com.bnool.anishop.services.manage.catalog.bean.Catalog;import java.util.List;public interface CatalogDao extends DaoManager<Catalog> {	/**	 * @param string	 */	void deletes(List<String> list);}

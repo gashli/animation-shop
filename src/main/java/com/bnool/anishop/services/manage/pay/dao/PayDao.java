@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.manage.pay.dao;import com.bnool.anishop.core.DaoManager;import com.bnool.anishop.services.manage.pay.bean.Pay;public interface PayDao extends DaoManager<Pay> {}

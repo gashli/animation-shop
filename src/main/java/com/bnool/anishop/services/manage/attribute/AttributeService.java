@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.manage.attribute;import com.bnool.anishop.core.Services;import com.bnool.anishop.services.manage.attribute.bean.Attribute;public interface AttributeService extends Services<Attribute> {	int selectCount(Attribute ee);}

@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.front.emailNotifyProduct;import com.bnool.anishop.core.Services;import com.bnool.anishop.services.front.emailNotifyProduct.bean.EmailNotifyProduct;public interface EmailNotifyProductService extends Services<EmailNotifyProduct> {	int selectCount(EmailNotifyProduct ep);}

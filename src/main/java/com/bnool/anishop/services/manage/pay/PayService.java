@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.manage.pay;import com.bnool.anishop.core.Services;import com.bnool.anishop.services.manage.pay.bean.Pay;public interface PayService extends Services<Pay> {}

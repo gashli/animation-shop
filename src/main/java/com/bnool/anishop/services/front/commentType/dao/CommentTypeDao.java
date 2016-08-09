@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.front.commentType.dao;import com.bnool.anishop.core.DaoManager;import com.bnool.anishop.services.front.commentType.bean.CommentType;public interface CommentTypeDao extends DaoManager<CommentType> {}

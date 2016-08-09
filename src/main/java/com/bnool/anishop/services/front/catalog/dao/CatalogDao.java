@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.front.catalog.dao;import com.bnool.anishop.core.DaoManager;import com.bnool.anishop.services.front.catalog.bean.Catalog;public interface CatalogDao extends DaoManager<Catalog> {}

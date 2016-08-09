@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.front.area.dao;import com.bnool.anishop.core.DaoManager;import com.bnool.anishop.services.front.area.bean.Area;public interface AreaDao extends DaoManager<Area> {}

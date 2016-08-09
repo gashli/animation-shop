@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.manage.account;import com.bnool.anishop.core.Services;import com.bnool.anishop.services.manage.account.bean.Account;public interface AccountService extends Services<Account> {}

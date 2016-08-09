@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.manage.express.dao;import com.bnool.anishop.core.DaoManager;import com.bnool.anishop.services.manage.express.bean.Express;public interface ExpressDao extends DaoManager<Express> {}

@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.front.favorite;import com.bnool.anishop.core.Services;import com.bnool.anishop.services.front.favorite.bean.Favorite;public interface FavoriteService extends Services<Favorite> {	int selectCount(Favorite favorite);}

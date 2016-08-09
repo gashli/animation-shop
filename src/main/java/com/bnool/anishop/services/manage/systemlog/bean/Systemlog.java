@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.manage.systemlog.bean;import java.io.Serializable;public class Systemlog extends com.bnool.anishop.services.common.Systemlog implements		Serializable {	private static final long serialVersionUID = 1L;	public void clear() {		super.clear();	}}

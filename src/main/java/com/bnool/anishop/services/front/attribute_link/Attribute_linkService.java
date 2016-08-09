@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.front.attribute_link;import com.bnool.anishop.core.Services;import com.bnool.anishop.services.front.attribute_link.bean.Attribute_link;public interface Attribute_linkService extends Services<Attribute_link> {	/**	 * @param oldAttr	 */	int deleteByCondition(Attribute_link oldAttr);}

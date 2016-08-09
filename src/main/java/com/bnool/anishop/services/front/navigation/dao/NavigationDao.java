@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.front.navigation.dao;import com.bnool.anishop.core.DaoManager;import com.bnool.anishop.services.front.navigation.bean.Navigation;public interface NavigationDao extends DaoManager<Navigation> {}

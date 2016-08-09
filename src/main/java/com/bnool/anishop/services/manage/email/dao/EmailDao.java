@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.manage.email.dao;import com.bnool.anishop.core.DaoManager;import com.bnool.anishop.services.manage.email.bean.Email;public interface EmailDao extends DaoManager<Email> {}

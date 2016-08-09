@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.front.address.dao;import com.bnool.anishop.core.DaoManager;import com.bnool.anishop.services.front.address.bean.Address;public interface AddressDao extends DaoManager<Address> {	/**	 * 初始化所有的地址全部为不选择	 */	void initAllAddress(Address address);}

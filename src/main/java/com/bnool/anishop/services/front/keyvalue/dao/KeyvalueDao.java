@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.front.keyvalue.dao;import com.bnool.anishop.core.DaoManager;import com.bnool.anishop.services.front.keyvalue.bean.Keyvalue;public interface KeyvalueDao extends DaoManager<Keyvalue> {}

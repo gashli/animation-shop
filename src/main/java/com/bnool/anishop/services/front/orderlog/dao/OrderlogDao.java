@@ -1,0 +1,1 @@
+package com.bnool.anishop.services.front.orderlog.dao;import com.bnool.anishop.core.DaoManager;import com.bnool.anishop.services.front.orderlog.bean.Orderlog;public interface OrderlogDao extends DaoManager<Orderlog> {	int selectCount(Orderlog orderlog);}
