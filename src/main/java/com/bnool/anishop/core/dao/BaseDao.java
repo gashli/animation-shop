@@ -4,8 +4,12 @@ import com.bnool.anishop.core.dao.page.PagerModel;
 import com.bnool.anishop.core.exception.PrivilegeException;
 import org.apache.ibatis.exceptions.IbatisException;
 import org.apache.ibatis.session.SqlSession;
+import org.apache.ibatis.session.SqlSessionFactory;
+import org.mybatis.spring.SqlSessionTemplate;
 import org.mybatis.spring.support.SqlSessionDaoSupport;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 import java.util.List;
 
@@ -21,19 +25,16 @@ public class BaseDao extends SqlSessionDaoSupport {
 	
 	private static final boolean selectPrivilege = false;
 
-	/**
-	 * 打开session，mybatis中的session能进行数据库基本的操作
-	 * 
-	 * @return
-	 */
-	public SqlSession openSession() {
-		try {
-			SqlSession session = getSqlSession();
-			return session;
-		} catch (Exception e) {
-			e.printStackTrace();
+	protected SqlSession sqlSession;
+
+	protected boolean externalSqlSession = true;
+	
+	@Autowired(required = false)
+	@Qualifier("sessionFactory")
+	public void setSqlSessionFactory(SqlSessionFactory sqlSessionFactory) {
+		if (!externalSqlSession) {
+			this.sqlSession = new SqlSessionTemplate(sqlSessionFactory);
 		}
-		return null;
 	}
 
 	/**
@@ -43,8 +44,7 @@ public class BaseDao extends SqlSessionDaoSupport {
 	 * @return
 	 */
 	public Object selectOne(String arg0) {
-		SqlSession session = openSession();
-		return session.selectOne(arg0);
+		return sqlSession.selectOne(arg0);
 	}
 
 	/**
@@ -55,8 +55,7 @@ public class BaseDao extends SqlSessionDaoSupport {
 	 * @return
 	 */
 	public Object selectOne(String arg0, Object arg1) {
-		SqlSession session = openSession();
-		return session.selectOne(arg0, arg1);
+		return sqlSession.selectOne(arg0, arg1);
 	}
 
 	/**
@@ -69,11 +68,10 @@ public class BaseDao extends SqlSessionDaoSupport {
 	 */
 	public PagerModel selectPageList(String selectList, String selectCount,
 			Object param) {
-		SqlSession session = openSession();
-		List list = session.selectList(selectList, param);
+		List list = sqlSession.selectList(selectList, param);
 		PagerModel pm = new PagerModel();
 		pm.setList(list);
-		Object oneC = session.selectOne(selectCount, param);
+		Object oneC = sqlSession.selectOne(selectCount, param);
 		if(oneC!=null){
 			pm.setTotal(Integer.parseInt(oneC.toString()));
 		}else{
@@ -90,8 +88,7 @@ public class BaseDao extends SqlSessionDaoSupport {
 	 * @return
 	 */
 	public List selectList(String arg0) {
-		SqlSession session = openSession();
-		return session.selectList(arg0);
+		return sqlSession.selectList(arg0);
 	}
 
 	/**
@@ -102,8 +99,8 @@ public class BaseDao extends SqlSessionDaoSupport {
 	 * @return
 	 */
 	public List selectList(String arg0, Object arg1) {
-		SqlSession session = openSession();
-		return session.selectList(arg0, arg1);
+		
+		return sqlSession.selectList(arg0, arg1);
 	}
 
 	/**
@@ -114,8 +111,8 @@ public class BaseDao extends SqlSessionDaoSupport {
 	 * @return
 	 */
 	public int getCount(String arg0, Object arg1) {
-		SqlSession session = openSession();
-		return (Integer) session.selectOne(arg0, arg1);
+		
+		return (Integer) sqlSession.selectOne(arg0, arg1);
 	}
 
 	/**
@@ -128,8 +125,7 @@ public class BaseDao extends SqlSessionDaoSupport {
 		if(selectPrivilege){
 			throw new PrivilegeException("只具备查询的权限！");
 		}
-		SqlSession session = openSession();
-		return session.insert(arg0);
+		return sqlSession.insert(arg0);
 	}
 
 	/**
@@ -143,8 +139,7 @@ public class BaseDao extends SqlSessionDaoSupport {
 		if(selectPrivilege){
 			throw new PrivilegeException("只具备查询的权限！");
 		}
-		SqlSession session = openSession();
-		int row = session.insert(arg0, arg1);
+		int row = sqlSession.insert(arg0, arg1);
 		if(row==1){
 			return Integer.valueOf(((PagerModel)arg1).getId());
 		}
@@ -161,8 +156,7 @@ public class BaseDao extends SqlSessionDaoSupport {
 		if(selectPrivilege){
 			throw new PrivilegeException("只具备查询的权限！");
 		}
-		SqlSession session = openSession();
-		return session.update(arg0);
+		return sqlSession.update(arg0);
 	}
 
 	/**
@@ -176,8 +170,7 @@ public class BaseDao extends SqlSessionDaoSupport {
 		if(selectPrivilege){
 			throw new PrivilegeException("只具备查询的权限！");
 		}
-		SqlSession session = openSession();
-		int row = session.update(arg0, arg1);
+		int row = sqlSession.update(arg0, arg1);
 		if(row==1){
 			if(arg1 instanceof PagerModel){
 //				return Integer.valueOf(((PagerModel)arg1).getId());
@@ -201,8 +194,7 @@ public class BaseDao extends SqlSessionDaoSupport {
 		if(selectPrivilege){
 			throw new PrivilegeException("只具备查询的权限！");
 		}
-		SqlSession session = openSession();
-		return session.delete(arg0);
+		return sqlSession.delete(arg0);
 	}
 
 	/**
@@ -216,8 +208,7 @@ public class BaseDao extends SqlSessionDaoSupport {
 		if(selectPrivilege){
 			throw new PrivilegeException("只具备查询的权限！");
 		}
-		SqlSession session = openSession();
-		return session.delete(arg0, arg1);
+		return sqlSession.delete(arg0, arg1);
 	}
 
 }
